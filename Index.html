@@ -1,0 +1,129 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style\styles.css">
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <div class="container ">
+            <header class="header">
+                <h1 id="title">
+                    Survey for Gamers
+                </h1>
+                <p id="description">
+                    Thanks for participating in our survey
+                </p>
+            </header>
+            <form action="" id="survey-form">
+
+                <div class="form-group">
+                    <label for="your-input-id" id="name-label">Name: </label>
+                    <input type="text" name="name" id="name" class="formControl" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email-input" id="email-label">Email:</label>
+                    <input type="email" id="email" name="email" class="formControl" placeholder="Enter your email address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="number-input" id="number-label">Number:</label>
+                    <input type="number" id="number" name="number" class="formControl" placeholder="Enter a number" min="0" max="11">
+                    <br>
+
+                <div class="form-group">
+                    <label for="Ign">IGN</label>
+                    <input type="IGN" name="IGN" id="email" class="formControl" placeholder="Enter your Ign" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="uid">UID</label>
+                    <input type="text" name="Ingame ID" id="Ingame ID" class="formControl" placeholder="Enter your UID" required>
+                </div>
+
+                <div class="form-group">
+                    <p id="quest">Which Mobile games do you mostly play?</p>
+                    <select name="role" required id="checkbox" claWhich online games do you mostly play? ss="formControl">
+                        <option value disabled selected >Mostly Played Game</option>
+                        <option value="wildrift">Wildrift</option>
+                        <option value="pubg">PUBG</option>  
+                        <option value="farlight">Farlight</option>
+                        <option value="mlbb">Mobile Legends</option>    
+                        <option value="cod">Call of Duty Mobile</option>
+                        <option value="other">Other</option>    
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <p id="quest">What is your main role?</p>
+                    <select name="role" required id="dropdown" class="formControl">
+                        <option value disabled selected >Select current role</option>
+                        <option value="fragger">Fragger</option>
+                        <option value="sniper">Sniper</option>
+                        <option value="objective">Objective</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            
+                <div class="form-group">
+                    <p id="quest">Where do you found me?</p>
+                    <label for="">
+                        <input type="radio" name="source" value="friends"
+                        class="inputRadio"
+                        checked> Friends
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source" value="fb"
+                        class="inputRadio"
+                        >Facebook
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source" value="tiktok"
+                        class="inputRadio"
+                        > Tiktok
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source" value="instagram"
+                        class="inputRadio"
+                        > Instagram
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source" value="other"
+                        class="inputRadio"
+                        > Other
+                    </label>
+                </div>
+            
+                <div class="form-group">
+                    <p id="quest">Would you like to see improved? </p>
+                    <label for="">
+                        <input type="checkbox" name="prefer" class="checkbox" value="Ingame Communication"> Comms
+                    </label>
+                    <label for="">
+                        <input type="checkbox" name="prefer" class="checkbox" value="Leadership"> Ingame Leadership
+                    </label>
+                    <label for="">
+                        <input type="checkbox" name="prefer" class="checkbox" value="Close Encounter">  Close Encounter Combat
+                    </label>
+                    <label for="">
+                        <input type="checkbox" name="prefer" class="checkbox" value="sniping"> Sniping
+                    </label>
+                    <label for="">
+                        <input type="checkbox" name="prefer" class="checkbox" value="other"> Other
+                    </label>
+                </div>
+                
+                <div class="form-group">
+                    <p id="quest">Give us your feedback</p>
+                    <textarea name="feedback"  cols="30" rows="5"  id="feedback" class="textarea" placeholder="Enter your feedback here..."></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </body>
+    </html>
